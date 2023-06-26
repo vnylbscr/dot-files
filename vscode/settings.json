@@ -1,3 +1,4 @@
+
 {
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
@@ -7,7 +8,7 @@
   },
   "editor.inlayHints.enabled": "onUnlessPressed",
   "editor.renderLineHighlight": "all",
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.accessibilitySupport": "off",
   "vim.normalModeKeyBindings": [
     {
@@ -27,6 +28,10 @@
       "before": ["<leader>", "c"]
     },
     {
+      "after": ["c", "i", "w"],
+      "before": ["<leader>", "c"]
+    },
+    {
       "commands": ["workbench.action.nextEditor"],
       "before": ["<tab>"]
     },
@@ -36,24 +41,28 @@
     }
   ],
   "editor.codeLens": true,
-  "editor.cursorSmoothCaretAnimation": false,
-  "editor.lineHeight": 24,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.lineHeight": 0,
   "vim.hlsearch": true,
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "Menlo",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.cursorBlinking": "blink",
   "editor.formatOnSave": true,
-  "editor.cursorWidth": 2,
+  // "editor.cursorWidth": 2,
   "vim.incsearch": true,
   "gitlens.hovers.currentLine.enabled": false,
+  "git.allowNoVerifyCommit": true,
   "editor.fontLigatures": true,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.formatOnSave": false
   },
   "vim.normalModeKeyBindingsNonRecursive": [
     {
@@ -64,6 +73,20 @@
           "command": ":nohl"
         }
       ]
+    },
+    {
+      // if i pressed leader + m go to next error, info, warning
+      "before": ["<leader>", "m"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.marker.nextInFiles"
+        }
+      ]
+    },
+    {
+      "commands": ["editor.action.organizeImports"],
+      "before": ["<leader>", "o"]
     },
     {
       "after": ["d", "d"],
@@ -153,7 +176,8 @@
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
   },
   "editor.fontSize": 15,
   "editor.fontWeight": "normal",
@@ -161,18 +185,21 @@
   "typescript.preferences.jsxAttributeCompletionStyle": "braces",
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "workbench.iconTheme": "vscode-icons",
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#fff",
-    "editorCursor.background": "#aaa"
+    // "editorCursor.foregroclassName="host-detail-container"f",
+    // "editorCursor.background": "#aaa",
+    // "editor.selectionBackground": "#135564",
+    // "editor.selectionHighlightBackground": "#135564",
+    // "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
+    // "editor.findMatchHighlightBackground": "#ff7b00a1"
   },
-  "editor.fontFamily": "Menlo, Hack Nerd Font Mono, JetBrains Mono, Fira Code,CaskaydiaCove Nerd Font, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Menlo, Hack Nerd Font Mono, Operator Mono Lig, JetBrainsMono Nerd Font, Fira Code,  Monaco, 'Courier New', monospace",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "redhat.telemetry.enabled": true,
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/mert/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
   "editor.inlineSuggest.enabled": true,
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
@@ -181,7 +208,7 @@
     "typescriptreact": true,
     "typescript": true,
     "json": true,
-    "html": false
+    "html": true
   },
   "gitlens.advanced.messages": {
     "suppressGitMissingWarning": true
@@ -206,18 +233,6 @@
   },
   "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home",
   "java.debug.settings.hotCodeReplace": "auto",
-  "sonarlint.ls.javaHome": "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home",
-  "sonarlint.rules": {
-    "typescript:S1117": {
-      "level": "off"
-    },
-    "typescript:S3358": {
-      "level": "off"
-    },
-    "typescript:S3317": {
-      "level": "off"
-    }
-  },
   "workbench.editor.historyBasedLanguageDetection": true,
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "editor.inlayHints.fontSize": 12,
@@ -226,7 +241,9 @@
   },
   "liveServer.settings.donotVerifyTags": true,
   "jest.autoRun": "off",
-  "workbench.colorTheme": "Dark+ Tweaked",
-  "window.zoomLevel": 1
+  "todohighlight.isEnable": true,
+  "react-native-tools.showUserTips": false,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vscode-icons"
 }
 
