@@ -1,4 +1,3 @@
-
 {
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
@@ -171,8 +170,8 @@
   },
   "explorer.confirmDragAndDrop": false,
   "editor.unicodeHighlight.allowedCharacters": {
-    "¿": true,
-    "¿": true
+    "ï¿½": true,
+    "ï¿½": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "emmet.includeLanguages": {
@@ -246,4 +245,3 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "vscode-icons"
 }
-
