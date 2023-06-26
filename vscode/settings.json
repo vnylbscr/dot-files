@@ -1,0 +1,232 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "files.autoSave": "afterDelay",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "editor.renderLineHighlight": "all",
+  "editor.formatOnPaste": true,
+  "editor.accessibilitySupport": "off",
+  "vim.normalModeKeyBindings": [
+    {
+      "after": ["d", "d"],
+      "before": ["<leader>", "d"]
+    },
+    {
+      "after": ["workbench.action.triggerParameterHints"],
+      "before": ["<leader>", "p"]
+    },
+    {
+      "after": ["c", "i", "'"],
+      "before": ["<leader>", "2"]
+    },
+    {
+      "after": ["c", "i", "w"],
+      "before": ["<leader>", "c"]
+    },
+    {
+      "commands": ["workbench.action.nextEditor"],
+      "before": ["<tab>"]
+    },
+    {
+      "commands": ["workbench.action.previousEditor"],
+      "before": ["<S-tab>"]
+    }
+  ],
+  "editor.codeLens": true,
+  "editor.cursorSmoothCaretAnimation": false,
+  "editor.lineHeight": 24,
+  "vim.hlsearch": true,
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.cursorBlinking": "blink",
+  "editor.formatOnSave": true,
+  "editor.cursorWidth": 2,
+  "vim.incsearch": true,
+  "gitlens.hovers.currentLine.enabled": false,
+  "editor.fontLigatures": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "after": [],
+      "commands": [
+        {
+          "command": ":nohl"
+        }
+      ]
+    },
+    {
+      "after": ["d", "d"],
+      "before": ["<leader>", "d"]
+    },
+    {
+      "commands": [":nohl"],
+      "before": ["<leader>", "n"]
+    },
+    {
+      "commands": ["workbench.action.splitEditor"],
+      "before": ["<leader>", "w"]
+    },
+    {
+      "commands": ["editor.action.rename"],
+      "before": ["<leader>", "r"]
+    },
+    {
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+      "before": ["<leader>", "e"]
+    },
+    {
+      "commands": ["revealInExplorer"],
+      "before": ["<leader>", "f"]
+    },
+    {
+      "after": ["_"],
+      "before": ["<leader>", "h"]
+    },
+    {
+      "after": ["$"],
+      "before": ["<leader>", "l"]
+    }
+  ],
+  // space is a leader key
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.useSystemClipboard": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.fontSize": 15,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "after": ["<Esc>"],
+      "before": ["j", "k"]
+    },
+    {
+      "after": ["<Esc>"],
+      "before": ["<C-j>"]
+    },
+    {
+      "after": ["<Esc>"],
+      "before": ["<C-k>"]
+    }
+  ],
+  "vim.sneak": true,
+  "editor.smoothScrolling": true,
+  "files.autoSaveDelay": 2000,
+  "vim.useCtrlKeys": false,
+  "editor.wordWrap": "on",
+  "git.confirmSync": false,
+  "explorer.confirmDelete": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // "javascript.inlayHints.parameterNames.enabled": "literals",
+  // "javascript.inlayHints.parameterTypes.enabled": true,
+  // "typescript.inlayHints.parameterTypes.enabled": true,
+  // "typescript.inlayHints.parameterNames.enabled": "literals",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "¿": true,
+    "¿": true
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.fontSize": 15,
+  "editor.fontWeight": "normal",
+  "javascript.preferences.jsxAttributeCompletionStyle": "braces",
+  "typescript.preferences.jsxAttributeCompletionStyle": "braces",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#fff",
+    "editorCursor.background": "#aaa"
+  },
+  "editor.fontFamily": "Menlo, Hack Nerd Font Mono, JetBrains Mono, Fira Code,CaskaydiaCove Nerd Font, Monaco, 'Courier New', monospace",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "redhat.telemetry.enabled": true,
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -javaagent:\"/Users/mert/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true,
+    "typescriptreact": true,
+    "typescript": true,
+    "json": true,
+    "html": false
+  },
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "java.imports.gradle.wrapper.checksums": [
+    {
+      "sha256": "87ae9c8019d865b2c69a49497a66c6e0f436228a0ddfc5345cea0788ad4e9b9d",
+      "allowed": true
+    },
+    {
+      "sha256": "bcdd65ab3e04972b5025c3b1c2fed9e4004878d79f092956f2a3c520a076c547",
+      "allowed": true
+    }
+  ],
+  "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "java.import.gradle.java.home": "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home",
+  "java.debug.settings.hotCodeReplace": "auto",
+  "sonarlint.ls.javaHome": "/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home",
+  "sonarlint.rules": {
+    "typescript:S1117": {
+      "level": "off"
+    },
+    "typescript:S3358": {
+      "level": "off"
+    },
+    "typescript:S3317": {
+      "level": "off"
+    }
+  },
+  "workbench.editor.historyBasedLanguageDetection": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "editor.inlayHints.fontSize": 12,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "jest.autoRun": "off",
+  "workbench.colorTheme": "Dark+ Tweaked",
+  "window.zoomLevel": 1
+}
+

@@ -1,0 +1,33 @@
+[
+  {
+    "key": "alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+escape",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+[IntlBackslash]",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "enter",
+    "command": "-extension.insertColonOrSemiColon",
+    "when": "suggestWidgetVisible && textInputFocus && config.editor.acceptSuggestionOnEnter != 'off' && editorLangId =~ /javascript|typescript|javascriptreact|typescriptreact/"
+  },
+  {
+    "key": "shift shift",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "alt alt",
+    "command": "workbench.action.quickOpen"
+  }
+]
